@@ -1,0 +1,163 @@
+:root {
+    --navigation-color: rgb(56, 56, 56);
+    --selection-color: rgb(96, 96, 96);
+    --section-color: rgb(217, 217, 217);
+    --text-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+/********************HEADER***************************/
+
+header {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    padding: 5px;
+    column-gap: 8px;
+    border-bottom: 1px solid var(--selection-color);
+}
+
+header span {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*******************Hamburger************************/
+
+.hamburger {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: '\2630';
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    background-color: var(--navigation-color);
+
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    padding: 20px;
+}
+
+.navigation ul li:hover {
+    background-color: var(--selection-color);
+}
+
+.current {
+    background-color: var(--selection-color);
+}
+
+/*******************SECTIONS**********************/
+h2 {
+    background-color: var(--navigation-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+section {
+    background-color: var(--section-color);
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+section p {
+    padding: 10px 25px 20px;
+    margin: 0;
+}
+
+section img {
+    display: block;
+    margin: 10px auto;
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+.course a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.course a:hover {
+    background-color: var(--selection-color);
+    color: white;
+}
+
+/*******************FOOTER************************/
+footer {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 44px;
+    height: auto;
+}
+
+.footer-info {
+    background-color: var(--navigation-color);
+    color: var(--text-color);
+    padding: 5px;
+}
