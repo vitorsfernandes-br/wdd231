@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Vitor Soares Fernandes</title>
     <meta name="author" content="Vitor Soares Fernandes">
-    <meta name="description" content="Home page of the WDD 231 - Web Frontedn Development course. ">
+    <meta name="description"
+        content="WDD 231 course homepage featuring Vitor Soares Fernandes, web development projects, and a filterable list of Web and Computer Programming certificate courses.">
+    <title>WDD 231 | Vitor Soares Fernandes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/user.svg" alt="Website Logo" width="512" height="512">
+        <img src="images/user.svg" alt="Site logo" width="44" height="44">
         <span>WDD 231 - Vitor Soares Fernandes</span>
-        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <button type="button" id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-controls="nav-bar"
+            aria-expanded="false"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
-            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li class="current"><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
@@ -31,40 +36,43 @@
         <h1>Home</h1>
         <section class="about-me">
             <h2>About Me</h2>
-            <p>My name is Vitor. I'm 28 years old. I live in São Paulo, Brazil. I'm married with a Salvadoreña, and I
-                have a daughter
-                called Lily.<br>
-                I enjoy movies, TV shows, comic books, videogames, Dungeons & Dragons, and above all, to spend time with
-                my family.<br>
-                I met my wife in an English school called Cumorah Academy in Czech Republic, our first dates were in
-                Prague, that's why
-                it is my favorite city in the world.</p>
+            <p>My name is Vitor. I'm 28 years old. I live in São Paulo, Brazil. I'm married to a Salvadoreña, and I have
+                a daughter called Lily.<br>
+                I enjoy movies, TV shows, comic books, videogames, Dungeons &amp; Dragons, and above all, spending time
+                with my family.<br>
+                I met my wife at an English school called Cumorah Academy in the Czech Republic. Our first dates were in
+                Prague, which is why it is my favorite city in the world.</p>
         </section>
         <section class="photo">
             <h2>Student Photo</h2>
-            <img src="images/profile.jpg" alt="Profile Photo">
+            <img src="images/profile.jpg" alt="Portrait of Vitor" width="240" height="300">
         </section>
         <section class="course">
             <h2>Web Certificate Courses</h2>
-            <a href="https://vitorsfernandes-br.github.io/wdd130/">WDD 130</a>
-            <a href="https://vitorsfernandes-br.github.io/wdd131/">WDD 131</a>
-            <a href="#">WDD 231</a>
+            <div class="course-filters" role="group" aria-label="Filter courses by subject">
+                <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-button" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" class="filter-button" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+            <div id="course-list" class="course-list" aria-live="polite"></div>
+            <p class="course-total" id="course-total">Total credits: 0</p>
+            <p class="course-legend"><span class="legend-indicator" aria-hidden="true"></span> Completed course</p>
         </section>
     </main>
     <footer>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/vitor-s-fenandes/">
-                <img src="images/linkedin.svg" alt="LinkedIn Logo">
+            <a href="https://www.linkedin.com/in/vitor-s-fenandes/" aria-label="LinkedIn profile">
+                <img src="images/linkedin.svg" alt="" width="44" height="44">
             </a>
-            <a href="https://github.com/vitorsfernandes-br">
-                <img src="images/github.svg" alt="GitHub Logo">
+            <a href="https://github.com/vitorsfernandes-br" aria-label="GitHub profile">
+                <img src="images/github.svg" alt="" width="44" height="44">
             </a>
-            <a href="https://www.facebook.com/">
-                <img src="images/facebook.svg" alt="Facebook Logo">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="" width="44" height="44">
             </a>
         </div>
         <div class="footer-info">
-            <p>&copy;<span id="currentyear"></span> • Vitor Soares Fernandes • São Paulo, Brazil</p>
+            <p>&copy; <span id="currentyear"></span> • Vitor Soares Fernandes • São Paulo, Brazil</p>
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
