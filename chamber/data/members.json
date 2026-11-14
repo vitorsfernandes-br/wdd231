@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Serra Verde Café",
+    "address": "Centro, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0001",
+    "website": "https://example.com",
+    "image": "member-1.svg",
+    "membership": 3,
+    "category": "Café & Bakery",
+    "description": "A cozy place for coffee and fresh pastries."
+  },
+  {
+    "name": "Ateliê das Palmeiras",
+    "address": "Jardim Jacira, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0002",
+    "website": "https://example.com",
+    "image": "member-2.svg",
+    "membership": 2,
+    "category": "Arts & Crafts",
+    "description": "Handmade gifts and creative workshops."
+  },
+  {
+    "name": "Mercado da Serra",
+    "address": "Centro, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0003",
+    "website": "https://example.com",
+    "image": "member-3.svg",
+    "membership": 1,
+    "category": "Groceries",
+    "description": "Everyday essentials and fresh local produce."
+  },
+  {
+    "name": "Flor do Campo",
+    "address": "Parque Paraíso, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0004",
+    "website": "https://example.com",
+    "image": "member-4.svg",
+    "membership": 2,
+    "category": "Florist",
+    "description": "Flowers, arrangements, and gifts for every occasion."
+  },
+  {
+    "name": "Tech Vale Soluções",
+    "address": "Centro, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0005",
+    "website": "https://example.com",
+    "image": "member-5.svg",
+    "membership": 3,
+    "category": "Technology",
+    "description": "Computer support and digital solutions for small businesses."
+  },
+  {
+    "name": "Sabor da Vila",
+    "address": "Jardim Marilu, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0006",
+    "website": "https://example.com",
+    "image": "member-6.svg",
+    "membership": 1,
+    "category": "Restaurant",
+    "description": "Homestyle meals and regional flavors."
+  },
+  {
+    "name": "Movimento Fit",
+    "address": "Jardim São Marcos, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0007",
+    "website": "https://example.com",
+    "image": "member-7.svg",
+    "membership": 2,
+    "category": "Fitness",
+    "description": "Classes and wellness programs for all levels."
+  },
+  {
+    "name": "Livraria Ipê",
+    "address": "Centro, Itapecerica da Serra, SP, Brazil (sample location)",
+    "phone": "+55 (11) 0000-0008",
+    "website": "https://example.com",
+    "image": "member-8.svg",
+    "membership": 3,
+    "category": "Books & Education",
+    "description": "Books, stationery, and community reading events."
+  }
+]

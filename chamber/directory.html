@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vitor Soares Fernandes">
+  <meta name="description"
+    content="Explore local businesses in Itapecerica da Serra. Browse members of the community chamber directory.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Business Directory | Itapecerica da Serra Chamber">
+  <meta property="og:description" content="Discover businesses and organizations in Itapecerica da Serra, São Paulo.">
+  <meta property="og:image" content="https://vitorsfernandes-br.github.io/wdd231/chamber/images/social-preview.svg">
+  <meta property="og:url" content="https://vitorsfernandes-br.github.io/wdd231/chamber/directory.html">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <title>Business Directory | Itapecerica da Serra Chamber of Commerce</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="directory.html" aria-label="Itapecerica da Serra Chamber home">
+        <img src="images/favicon.svg" alt="" width="56" height="56">
+        <span class="brand-text"><strong>Itapecerica da Serra</strong><span>Chamber of Commerce</span></span>
+      </a>
+      <button type="button" id="menu-button" class="menu-button" aria-label="Open navigation menu"
+        aria-controls="primary-navigation" aria-expanded="false">☰</button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html" aria-current="page">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro" aria-labelledby="directory-heading">
+      <p class="eyebrow">CONNECT • DISCOVER • GROW</p>
+      <h1 id="directory-heading">Business Directory</h1>
+      <p>Meet the businesses that make Itapecerica da Serra a vibrant community.</p>
+    </section>
+    <section class="directory-section" aria-label="Chamber members">
+      <div class="directory-toolbar">
+        <div>
+          <h2>Our Members</h2>
+          <p id="member-count" aria-live="polite">Loading members...</p>
+        </div>
+        <div class="view-controls" role="group" aria-label="Directory display mode">
+          <button type="button" id="grid-button" class="view-button active" aria-pressed="true">▦ Grid</button>
+          <button type="button" id="list-button" class="view-button" aria-pressed="false">☷ List</button>
+        </div>
+      </div>
+      <div id="members" class="members-grid" aria-live="polite"></div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Itapecerica da Serra Chamber of Commerce</h3>
+        <p>Avenida XV de Novembro, 313</p>
+        <p>Centro, Itapecerica da Serra - SP</p>
+        <p>info@itapecerica.org</p>
+        <p>+55 (11) 9999-9999</p>
+      </div>
+
+      <div class="social-media">
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="images/youtube.svg" alt="YouTube" width="48" height="48">
+        </a>
+
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="images/twitter.svg" alt="Twitter" width="48" height="48">
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+        </a>
+      </div>
+
+      <div class="footer-info">
+        <p>WDD231 Class Project</p>
+        <p>Vitor Soares Fernandes</p>
+        <p>&copy; <span id="currentyear"></span> Itapecerica da Serra Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
