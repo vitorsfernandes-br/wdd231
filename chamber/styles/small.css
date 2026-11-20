@@ -5,6 +5,7 @@
     --ink: #25312b;
     --muted: #5a655e;
     --line: #dce2db;
+    --forest-deep: #12291f;
 }
 
 body {
@@ -338,10 +339,6 @@ footer {
 }
 
 /**************** HOME - MOBILE ****************/
-
-:root {
-    --forest-deep: #12291f;
-}
 
 .hero {
     position: relative;
