@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12291f"/>
+      <stop offset="0.6" stop-color="#1f4a39"/>
+      <stop offset="1" stop-color="#3a7560"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f0d49e" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f0d49e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="640" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1240" cy="270" r="210" fill="url(#glow)"/>
+  <circle cx="1240" cy="270" r="64" fill="#f0d49e"/>
+
+  <!-- far hills -->
+  <path d="M0 450 C220 380 430 420 680 390 S1120 330 1340 385 S1540 420 1600 395 V640 H0 Z" fill="#2f6650"/>
+
+  <!-- middle hill with the village -->
+  <path d="M0 520 C260 470 520 500 760 470 S1180 420 1420 465 S1560 490 1600 480 V640 H0 Z" fill="#2a5c48"/>
+
+  <!-- village -->
+  <g fill="#3f7d66">
+    <!-- church -->
+    <rect x="1090" y="360" width="130" height="110"/>
+    <path d="M1080 360 L1155 318 L1230 360 Z"/>
+    <rect x="1135" y="270" width="40" height="92"/>
+    <path d="M1130 272 L1155 238 L1180 272 Z"/>
+    <rect x="1152" y="208" width="6" height="32"/>
+    <rect x="1144" y="217" width="22" height="6"/>
+    <!-- houses -->
+    <rect x="990" y="410" width="90" height="60"/>
+    <path d="M982 410 L1035 380 L1088 410 Z"/>
+    <rect x="1236" y="400" width="110" height="70"/>
+    <path d="M1228 400 L1291 366 L1354 400 Z"/>
+  </g>
+  <!-- warm windows and door -->
+  <g fill="#f0d49e">
+    <path d="M1141 470 V425 a14 14 0 0 1 28 0 V470 Z"/>
+    <rect x="1147" y="292" width="16" height="26" rx="8"/>
+    <rect x="1015" y="428" width="16" height="18"/>
+    <rect x="1042" y="428" width="16" height="18"/>
+    <rect x="1262" y="418" width="16" height="20"/>
+    <rect x="1304" y="418" width="16" height="20"/>
+  </g>
+
+  <!-- trees -->
+  <g fill="#1d4637">
+    <rect x="945" y="430" width="8" height="46"/>
+    <circle cx="949" cy="414" r="34"/>
+    <rect x="1392" y="420" width="8" height="52"/>
+    <circle cx="1396" cy="402" r="38"/>
+    <circle cx="1432" cy="424" r="26"/>
+  </g>
+
+  <!-- foreground hill -->
+  <path d="M0 575 C300 540 620 590 900 560 S1400 520 1600 555 V640 H0 Z" fill="#183b2d"/>
+
+  <!-- gold path -->
+  <path d="M0 612 C420 600 900 606 1200 590 S1500 560 1600 548" fill="none" stroke="#d2a34a" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -6,3 +6,7 @@ menuButton.addEventListener("click", () => {
   menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
   menuButton.textContent = isOpen ? "✕" : "☰";
 });
+
+// Footer details shared by every page.
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;

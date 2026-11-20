@@ -3,7 +3,6 @@ const countElement = document.querySelector("#member-count");
 const gridButton = document.querySelector("#grid-button");
 const listButton = document.querySelector("#list-button");
 
-// Build elements rather than inserting data directly into innerHTML.
 function createTextElement(tag, className, value) {
   const element = document.createElement(tag);
   if (className) element.className = className;
@@ -73,6 +72,4 @@ function setView(view) {
 }
 gridButton.addEventListener("click", () => setView("grid"));
 listButton.addEventListener("click", () => setView("list"));
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
 displayMembers();

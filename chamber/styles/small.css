@@ -336,3 +336,194 @@ footer {
 .social-media a:hover {
     opacity: 0.7;
 }
+
+/**************** HOME - MOBILE ****************/
+
+:root {
+    --forest-deep: #12291f;
+}
+
+.hero {
+    position: relative;
+    background: var(--forest-deep);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: clamp(440px, 60vw, 560px);
+    object-fit: cover;
+    object-position: 72% bottom;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem max(1rem, calc((100% - 1200px) / 2 + 1rem));
+    background: linear-gradient(to bottom, #12291fe6 0%, #12291f99 45%, #12291f00 80%);
+    color: white;
+}
+
+.hero-copy {
+    max-width: 34rem;
+}
+
+.hero h1 {
+    font-size: clamp(1.7rem, 6vw, 2.8rem);
+    margin-bottom: .75rem;
+}
+
+.hero p {
+    color: #e5eee7;
+    margin-bottom: 1.4rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: .8rem 1.6rem;
+    border-radius: 8px;
+    background: var(--gold);
+    color: var(--forest-deep);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background: #e3b861;
+}
+
+.home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 5px 18px #10251a0b;
+}
+
+.panel h2,
+.spotlights h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Events */
+.event-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.event-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.event-date {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3.6rem;
+    padding: .35rem 0;
+    border-radius: 8px;
+    background: var(--forest);
+    color: white;
+    line-height: 1.2;
+}
+
+.event-date span {
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.event-date strong {
+    font-size: 1.4rem;
+}
+
+.event-list h3 {
+    font-size: 1rem;
+}
+
+.event-list p {
+    color: var(--muted);
+    font-size: .875rem;
+}
+
+/* Weather */
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.weather-icon {
+    flex: none;
+    background: #e9eee8;
+    border-radius: 50%;
+}
+
+.weather-temp {
+    font: 700 2.4rem/1.1 Merriweather, Georgia, serif;
+    color: var(--forest);
+}
+
+.weather-description {
+    font-weight: 600;
+}
+
+.weather-extra {
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.forecast-heading {
+    font-size: 1rem;
+    margin-bottom: .6rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+}
+
+.forecast-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    text-align: center;
+}
+
+.forecast-day h4 {
+    font-size: .85rem;
+}
+
+.forecast-day img {
+    display: block;
+    margin: 0 auto;
+}
+
+.forecast-temp {
+    font-size: .8rem;
+    color: var(--muted);
+}
+
+/* Spotlights */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}

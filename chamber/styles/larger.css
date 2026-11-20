@@ -82,3 +82,36 @@
     display: flex;
   }
 }
+
+@media (min-width: 650px) {
+  /**************** HOME ****************/
+
+  .hero-content {
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to left, #12291fe6 0%, #12291f99 45%, #12291f00 75%);
+  }
+
+  .hero-copy {
+    text-align: right;
+  }
+
+  .home-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .hero-copy {
+    text-align: right;
+  }
+
+  .spotlights {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 850px) {
+  .spotlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
